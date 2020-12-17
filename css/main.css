@@ -1,7 +1,7 @@
 :root {
-  --xlight-color: #ffebf2;
-  --light-color: #fdd7e4;
-  --med-color: #faafbe;
+  --xlight-color: #C2D3CC;
+  --light-color: #86A89A;
+  --med-color: #0D5135;
   --neutral-dark-color: #4c4646;
   --neutral-light-color: #b6b6b4;
   --neutral-xlight-color: #ededeb;
@@ -35,6 +35,10 @@ img {
   width: 100%;
 }
 
+.banner {
+  background: rgba(255, 255, 255, .7)
+}
+
 /* navigation */
 
 header {
@@ -44,9 +48,12 @@ header {
   text-align: center;
   color: #000;
 }
+header h1 {
+  margin: 0;
+}
 
 header h1 img {
-  width: 50%;
+  width: 25%;
   margin: 0;
 }
 
@@ -73,7 +80,7 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: var(--light-color);
+  background-color: var(--xlight-color);
   color: var(--neutral-dark-color);
 }
 
@@ -105,7 +112,7 @@ p {
   padding: .3rem 1rem;
   transform: translate(8px, 0);
   position: absolute;
-  max-width: 15em;
+  max-width: 25em;
   overflow: hidden;
   justify-content: unset;
 }
@@ -320,6 +327,11 @@ h3 a:hover {
 
   header h1 {
     display: inline-block;
+    margin: 0;
+  }
+
+  header h1 img {
+    width: 50%;
     margin: 0;
   }
 
