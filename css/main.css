@@ -48,6 +48,7 @@ header {
   text-align: center;
   color: #000;
 }
+
 header h1 {
   margin: 0;
 }
@@ -115,7 +116,7 @@ p {
   max-width: 25em;
   overflow: hidden;
   justify-content: unset;
-  background: rgba(255, 255, 255, .7)
+  background: rgba(255, 255, 255, .7);
 }
 
 main {
@@ -326,11 +327,6 @@ h3 a:hover {
     text-align: left;
   }
 
-  header h1 {
-    display: inline-block;
-    margin: 0;
-  }
-
   header h1 img {
     width: 50%;
     margin: 0;
@@ -338,12 +334,11 @@ h3 a:hover {
 
   header nav {
     float: right;
-    vertical-align: middle;
   }
 
   header h1 {
-    margin-bottom: 0;
-    margin-right: 1.5rem;
+    display: inline-block;
+    margin: 0;
   }
 
   .photo {
