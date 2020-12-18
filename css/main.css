@@ -139,10 +139,6 @@ article {
   margin: 1rem;
 }
 
-article div img {
-  width: 30%;
-}
-
 /* image galary */
 
 #photo {
@@ -238,6 +234,15 @@ article div img {
   #home-articles .articles-containers > *:last-child {
     grid-template-columns: 1fr;
     grid-column: 1;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  article div {
+    
   }
 
   /* photo galary */
