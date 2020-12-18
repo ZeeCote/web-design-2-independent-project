@@ -5,43 +5,65 @@
   <title>Season & Garnish</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="img/logo-16x16.png" type="img/logo-16x16.png"> 
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="icon" type="image/png" href="favicon-196.png">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to main content</a></li>
+    <li><a class="current" href="#footer">Skip to main content</a></li>
+  </ul>
+
   <!-- responsive navigation -->
 
-  <header>
+  <header role="banner">
 
     <h1><img src="images/logo-256x256.png" alt="Season & Garnish"></h1>
 
-    <nav>
+    <nav id="nav" role="navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="current" href="recipes.html">Recipes</a></li>
+        <li><a class="current" href="#main">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
         <li><a href="tips.html">Tips & Tricks</a></li>
       </ul>
     </nav>
 
+    <div class="banner">
+      <h2 class="card-title">Recipes and tips from the man in my kitchen</h2>
+      <p class="card-body">This is a place for me to store all the knowledge that my significant other has tought me over the years on anything cooking. He is an amazing home cook that has great recipes and tricks that would be a shame to be kept for ourselves.</p>
+      <a href="recipes.html">View Recipes</a>
+    </div>
+
+    <div>
+      <img src="images/winter-2020-snow-showing.jpg" alt="" class="banner-img">
+    </div>
+
   </header>
 
-  <!-- hero banner -->
+  <main id="main" role="main">
 
-  <main>
+    <article>
 
-
-
-  </main>
-
-  <!-- photo gallery -->
-
-  <section>
+      <div>
+        <img src="images/butternutsquash-soup.jpg" alt="Butternut Squash Soup">
+      </div>
+  
+      <div>
+        <h2>Recipe of the Month</h2>
+        <p>This is a simple recipe we make a on week days when the weather gets colder.</p>
+        <a href="recipes.html">See the Recipe</a>
+      </div>
+  
+    </article>
 
     <div class="py-2">
       <h2>Photo Gallery</h2>
+      <a href="#">See More</a>
     </div>
 
     <section id="photo">
@@ -68,11 +90,11 @@
 
     </section>
 
-  </section>
+  </main>
 
   <!-- footer -->
 
-  <footer class="footer">
+  <footer id="footer" class="footer" role="contentinfo">
 
     <ul class="social">
       <li><a href="#"><img src="images/instagram.svg" alt="Instagram"></a></li>
@@ -80,7 +102,7 @@
       <li><a href="#"><img src="images/youtube.svg" alt="YouTube"></a></li>
     </ul>
 
-    <small class="copyright">© Season & Garnish</small>
+    <small class="copyright">© Season and Garnish</small>
 
   </footer>
 
