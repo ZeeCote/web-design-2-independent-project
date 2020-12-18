@@ -121,6 +121,7 @@ p {
 
 main {
   position: relative;
+  margin: 1rem;
 }
 
 h3 a {
@@ -130,6 +131,16 @@ h3 a {
 
 h3 a:hover {
   color: var(--neutral-light-color);
+}
+
+/* article */
+
+article {
+  margin: 1rem;
+}
+
+article div img {
+  width: 30%;
 }
 
 /* image galary */
